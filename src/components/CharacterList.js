@@ -1,12 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import axios from "axios";
 
 export default function CharacterList() {
-  // TODO: Add useState to track data from useEffect
+  // const [charactersAll, setCharactersAll] = useState(null);
 
-  useEffect(() => {
-    // TODO: Add AJAX/API Request here - must run in `useEffect`
-    //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
-  }, [])
+  // useEffect(() => {
+  //   axios
+  //     .get(`https://rickandmortyapi.com/documentation/#get-all-characters`)
+  //     .then(res => {
+  //       console.log("res", res);
+  //       setCharactersAll(res.data.results);
+  //     })
+  //     .catch(err => console.log("This is not working!"));
+  //   //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
+  // }, [charactersAll, setCharactersAll])
 
   return <section className='character-list grid-view'>
 
