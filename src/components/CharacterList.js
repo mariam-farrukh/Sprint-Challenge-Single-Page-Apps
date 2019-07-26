@@ -18,6 +18,8 @@ export default function CharacterList() {
       });
   }, []);
 
+  // "https://rickandmortyapi.com/api/character/?name=${name}"
+
   return ( 
     <section className='character-list grid-view'>
       {characters.map(character => (
