@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import CharacterCard from "./CharacterCard.js";
+// import SearchForm from "./SearchForm.js"
 
 export default function CharacterList() {
   const [characters, setCharacters] = useState([]);
@@ -28,6 +29,7 @@ export default function CharacterList() {
           origin={character.origin.name}
           status={character.status}
           image={character.image}
+          episode={character.episode}
         />
       ))}
     </section>
