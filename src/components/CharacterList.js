@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import CharacterCard from "./CharacterCard";
+import CharacterCard from "./CharacterCard.js";
 
 export default function CharacterList() {
   const [characters, setCharacters] = useState([]);
@@ -13,7 +13,7 @@ export default function CharacterList() {
         setCharacters(res.data.results);
       })
       .catch(error => {
-        console.error("Server Error", error);
+        console.error("Error with Character!", error);
       });
   }, []);
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import EpisodeCard from "./EpisodeCard";
+import EpisodeCard from "./EpisodeCard.js";
 
 export default function EpisodeList(props) {
   const [episodes, setEpisodes] = useState([]);
